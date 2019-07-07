@@ -28,8 +28,8 @@ class DishDetail extends Component {
                 <ul className="list-unstyled">
                     {comments && comments.map((comment) => {
                         return (
-                            <div>
-                                <li key={comment.id}>
+                            <div  key={comment.id}>
+                                <li>
                                     <p className="mb-1">{comment.comment}</p>
                                     <small className="text-muted">-- {comment.author},
                                         {new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'short', day: '2-digit'})
@@ -53,6 +53,10 @@ class DishDetail extends Component {
                     {this.renderDish(this.props.dish)}
                     {this.renderComments(this.props.dish.comments)}
                 </div>
+            )
+        }else{
+            return(
+                <div></div>
             )
         }
     }
