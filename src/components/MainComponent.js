@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import Menu from './MenuComponent';
 import { DISHES } from '../shared/dishes'
 import DishDetailComponent from './DishdetailComponent';
@@ -26,6 +27,7 @@ class Main extends Component {
                 <Menu dishes={this.state.dishes}
                       onClick={(dishId) => this.onDishSelect(dishId)}/>
                 <DishDetailComponent dish={this.state.dishes.find((dish) => dish.id === this.state.selectedDish)} />
+                <Footer/>
             </div>
         );
     }

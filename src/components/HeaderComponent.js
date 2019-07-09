@@ -15,10 +15,10 @@ class Header extends Component {
                     </div>
                 </Navbar>
                 <Jumbotron>
-                    <div className='Container'>ç
+                    <div className='Container'>
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
-                                <h1>Ristorante con Fundion</h1>
+                                <h1>Ristorante con Funsion</h1>
                                 <p> We take inspiration from the world's best cuisines</p>
                             </div>
                         </div>
