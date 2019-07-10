@@ -33,7 +33,6 @@ function About(props) {
             <RenderLeader leader={leader} />
         );
     });
-
     return(
         <div className="container">
             <div className="row">
